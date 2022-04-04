@@ -1,2 +1,4 @@
 .idea/
-src/results/
+desktop.ini
+
+# (comment bc I want to share the pretrained models) src/results
