@@ -47,6 +47,7 @@ class MRNet(nn.Module):
                 'mlp': 0.,
             }
         # Perception
+        big = False
         if big:
             self.high_dim, self.high_dim0 = 128, 64
             self.mid_dim, self.mid_dim0 = 256, 128
