@@ -22,7 +22,7 @@ def to_tensor(sample):
 
 class RAVENDataset(Dataset):
     def __init__(self, root, cache_root, dataset_type=None, image_size=80, transform=None,
-                 use_cache=False, save_cache=False, in_memory=False, subset=None, flip=False, permute=False):
+                 use_cache=False, save_cache=False, in_memory=False, subset=None, flip=False, permute=False, additional_data_dir=False):
         self.root = root
         self.cache_root = cache_root if cache_root is not None else root
         self.dataset_type = dataset_type
@@ -36,8 +36,10 @@ class RAVENDataset(Dataset):
         if self.use_cache:
             self.cached_dir = os.path.join(self.cache_root, 'cache', f'{self.dataset_type}_{self.image_size}')
 
-        if self.root is not None:
+        if self.root is not None and additional_data_dir == True:
             self.data_dir = os.path.join(self.root, 'data')
+        elif self.root is not None:
+            self.data_dir = self.root
         else:
             self.data_dir = self.cached_dir
 
