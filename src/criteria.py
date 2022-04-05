@@ -7,6 +7,9 @@ def calculate_acc(output, target):
     correct = pred.eq(target.data).cpu().sum().numpy()
     return correct * 100.0 / target.size()[0]
 
+def calculate_pred(output):
+    pred = output.data.max(1)[1]
+    return pred
 
 def calculate_correct(output, target):
     pred = output.data.max(1)[1]

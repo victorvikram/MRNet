@@ -352,7 +352,8 @@ class Trainer:
                     model_output, meta_pred = model_outputs
                     model_output_heads = None
 
-            print("MODEL_OUTPUT", model_output)
+            pred = criteria.calculate_pred(model_output)
+            print("MODEL_PREDICTIONS", pred)
             print("TARGET", target)
 
             loss = self.criterion(model_output, target)
