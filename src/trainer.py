@@ -275,9 +275,9 @@ class Trainer:
                     model_output, meta_pred = model_outputs
                     model_output_heads = None
 
-            print(model_output)
-            print(target)
-            
+            print("MODEL_OUTPUT", model_output)
+            print("TARGET", target)
+
             loss = self.criterion(model_output, target)
             loss_avg += loss.item()
             acc = criteria.calculate_acc(model_output, target)
