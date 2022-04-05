@@ -51,18 +51,20 @@ class Trainer:
         print('Loading datasets')
         from data.data_utils import get_data
 
+        shuffle = not args.probe_mode
+        
         self.trainloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="train", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=True, special_dir=args.special_dir)
+                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
         self.validloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="val", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=False, special_dir=args.special_dir)
+                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
         self.testloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                    dataset_type="test", regime=self.args.regime, subset=self.args.subset,
                                    batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                   ratio=self.args.ratio, shuffle=False, special_dir=args.special_dir)
+                                   ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
 
         print('Building model')
         params = args.__dict__
@@ -330,6 +332,7 @@ class Trainer:
             loader = self.validloader
         else:
             loader = self.testloader
+
         for batch_data in tqdm(loader, subset):
             counter += 1
 
@@ -351,7 +354,7 @@ class Trainer:
 
             print("MODEL_OUTPUT", model_output)
             print("TARGET", target)
-            
+
             loss = self.criterion(model_output, target)
             loss_avg += loss.item()
             acc = criteria.calculate_acc(model_output, target)

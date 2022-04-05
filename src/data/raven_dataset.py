@@ -55,6 +55,9 @@ class RAVENDataset(Dataset):
             file_names.sort()
             self.file_names += [os.path.join(i, f) for f in file_names]
 
+            print(subsets)
+            print(self.file_names)
+
         self.memory = None
         if in_memory:
             self.load_memory()
