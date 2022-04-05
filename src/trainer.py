@@ -90,6 +90,7 @@ class Trainer:
             new_state_dict = torch.load(ckpt_file_path, map_location=lambda storage, loc: storage)
             for key, val in new_state_dict.items():
                 state_dict[key] = val
+            
             self.model.load_state_dict(state_dict)
 
         if self.args.loss_func == 'contrast':
@@ -274,6 +275,9 @@ class Trainer:
                     model_output, meta_pred = model_outputs
                     model_output_heads = None
 
+            print(model_output)
+            print(target)
+            
             loss = self.criterion(model_output, target)
             loss_avg += loss.item()
             acc = criteria.calculate_acc(model_output, target)
