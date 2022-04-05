@@ -315,7 +315,7 @@ class Trainer:
 
         return loss_avg / float(counter), acc_avg / float(counter), acc_regime
 
-    def evaluate(self, subset, save_output=False):
+    def evaluate(self, subset, save_results=False):
         self.model.eval()
 
         counter = 0
@@ -356,7 +356,7 @@ class Trainer:
             print("MODEL_PREDICTIONS", pred)
             print("TARGET", target)
 
-            if save_output:
+            if save_results:
                 filename_arr = np.array(loader.dataset.file_names)
                 print(filename_arr)
 
