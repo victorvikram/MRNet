@@ -3,6 +3,8 @@ import pickle
 
 import numpy as np
 import pandas as pd
+from datetime import datetime
+
 import torch
 import torch.optim as optim
 from tqdm import tqdm
@@ -372,7 +374,7 @@ class Trainer:
                 now = datetime.now() # current date and time
                 time_pref = now.strftime("%Y-%m-%d_%H-%M-%S")
                 csv_name = f"{time_pref}{regime}.csv"
-                results_df.to_csv(osp.join("output", csv_name))
+                results_df.to_csv(os.path.join("output", csv_name))
 
 
 
