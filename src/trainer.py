@@ -315,7 +315,7 @@ class Trainer:
 
         return loss_avg / float(counter), acc_avg / float(counter), acc_regime
 
-    def evaluate(self, subset):
+    def evaluate(self, subset, save_output=False):
         self.model.eval()
 
         counter = 0
@@ -355,6 +355,34 @@ class Trainer:
             pred = criteria.calculate_pred(model_output)
             print("MODEL_PREDICTIONS", pred)
             print("TARGET", target)
+
+            if save_output:
+                filename_arr = np.array(loader.dataset.file_names)
+                print(filename_arr)
+
+                pred_arr = pred.cpu().detach().numpy()
+                target_arr = target.cpu().detach().numpy()
+                pred_result_arr = (pred_arr == target_arr)
+
+                print(pred_arr)
+                print(target_arr)
+
+                full_arr = np.concatenate(([pred_arr], [target_arr], [pred_result_arr]))
+                results_df = pd.DataFrame(full_arr.transpose(), columns=["prediction", "target", "match"])
+
+
+                results_df["model"] = args.testname
+
+                results_df["data_path"] = data_dir if len(args.task) > 1 else osp.join(args.data_dir, args.task[0])
+
+                now = datetime.now() # current date and time
+                time_pref = now.strftime("%Y-%m-%d_%H-%M-%S")
+                csv_name = f"{time_pref}{regime}.csv"
+                results_df.to_csv(osp.join("results", csv_name))
+
+                print(results_df)
+
+
 
             loss = self.criterion(model_output, target)
             loss_avg += loss.item()
