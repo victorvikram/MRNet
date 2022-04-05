@@ -316,7 +316,7 @@ class Trainer:
 
         return loss_avg / float(counter), acc_avg / float(counter), acc_regime
 
-    def evaluate(self, subset, save_results=False, ):
+    def evaluate(self, subset):
         self.model.eval()
 
         counter = 0
@@ -353,7 +353,7 @@ class Trainer:
                     model_output, meta_pred = model_outputs
                     model_output_heads = None
 
-            if save_results:
+            if self.args.probe_mode:
                 pred = criteria.calculate_pred(model_output)
                 data_dir = loader.dataset.root
                 filename_arr = np.array(loader.dataset.file_names)
@@ -365,7 +365,7 @@ class Trainer:
                 results_df = pd.DataFrame(full_arr.transpose(), columns=["prediction", "target", "match"])
 
 
-                results_df["model"] = args.testname
+                results_df["model"] = self.args.testname
                 results_df["data_root"] = data_dir
                 results_df["file_names"] = filename_arr
 

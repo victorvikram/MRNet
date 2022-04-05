@@ -14,6 +14,7 @@ Yaniv Benny, Niv Pekar, Lior Wolf. [**"Scale-Localized Abstract Reasoning"**](ht
 * torchvision==0.5.0
 * scikit-image
 * natsort
+* pandas
 
 
 ## Data
