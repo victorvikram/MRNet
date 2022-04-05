@@ -4,7 +4,10 @@ import warnings
 import torch.utils.data
 
 
-def get_data_path(data_root, dataname: str):
+def get_data_path(data_root, dataname: str, special_dir=None):
+    if special_dir is not None:
+        return special_dir
+
     if data_root is None:
         return None
     if os.path.isdir(os.path.join(data_root, dataname)):
@@ -18,18 +21,18 @@ def get_data_path(data_root, dataname: str):
 
 def get_data(data_root, dataname, image_size,
              dataset_type='train', regime=None, subset=None,
-             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False):
+             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False, special_dir=None):
 
     # Load real dataset
     if 'PGM' in dataname:
         from .pgm_dataset import PGMDataset
-        dataset = PGMDataset(get_data_path(data_root, dataname), None,
+        dataset = PGMDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                              dataset_type=dataset_type, regime=regime, subset=subset,
                              image_size=image_size, transform=None, flip=flip, permute=permute)
 
     if 'RAVEN' in dataname:
         from .raven_dataset import RAVENDataset
-        dataset = RAVENDataset(get_data_path(data_root, dataname), None,
+        dataset = RAVENDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                                dataset_type=dataset_type, subset=subset,
                                image_size=image_size, transform=None, flip=flip, permute=permute)
 

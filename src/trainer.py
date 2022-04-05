@@ -50,18 +50,19 @@ class Trainer:
 
         print('Loading datasets')
         from data.data_utils import get_data
+
         self.trainloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="train", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=True)
+                                    ratio=self.args.ratio, shuffle=True, special_dir=args.special_dir)
         self.validloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="val", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=False)
+                                    ratio=self.args.ratio, shuffle=False, special_dir=args.special_dir)
         self.testloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                    dataset_type="test", regime=self.args.regime, subset=self.args.subset,
                                    batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                   ratio=self.args.ratio, shuffle=False)
+                                   ratio=self.args.ratio, shuffle=False, special_dir=args.special_dir)
 
         print('Building model')
         params = args.__dict__
