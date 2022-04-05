@@ -378,7 +378,7 @@ class Trainer:
                 now = datetime.now() # current date and time
                 time_pref = now.strftime("%Y-%m-%d_%H-%M-%S")
                 csv_name = f"{time_pref}{regime}.csv"
-                results_df.to_csv(osp.join("results", csv_name))
+                results_df.to_csv(osp.join("output", csv_name))
 
                 print(results_df)
 
