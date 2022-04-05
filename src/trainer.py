@@ -373,7 +373,7 @@ class Trainer:
 
                 now = datetime.now() # current date and time
                 time_pref = now.strftime("%Y-%m-%d_%H-%M-%S")
-                csv_name = f"{time_pref}{regime}.csv"
+                csv_name = f"{time_pref}_{self.args.testname}.csv"
                 results_df.to_csv(os.path.join("output", csv_name))
 
 
