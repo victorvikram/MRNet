@@ -52,19 +52,19 @@ class Trainer:
         from data.data_utils import get_data
 
         shuffle = not args.probe_mode
-        
+
         self.trainloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="train", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
+                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir, probe_mode=args.probe_mode)
         self.validloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                     dataset_type="val", regime=self.args.regime, subset=self.args.subset,
                                     batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
+                                    ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir, probe_mode=args.probe_mode)
         self.testloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                    dataset_type="test", regime=self.args.regime, subset=self.args.subset,
                                    batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
-                                   ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir)
+                                   ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir, probe_mode=args.probe_mode)
 
         print('Building model')
         params = args.__dict__
