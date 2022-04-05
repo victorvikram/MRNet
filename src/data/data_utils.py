@@ -21,7 +21,7 @@ def get_data_path(data_root, dataname: str, special_dir=None):
 
 def get_data(data_root, dataname, image_size,
              dataset_type='train', regime=None, subset=None,
-             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False, special_dir=None):
+             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False, special_dir=None, probe_mode=False):
 
     # Load real dataset
     if 'PGM' in dataname:
@@ -44,6 +44,9 @@ def get_data(data_root, dataname, image_size,
         random.shuffle(indices)
         dataset = torch.utils.data.Subset(dataset, indices[:int(max(old_len * ratio, 5 * batch_size))])
         warnings.warn(f'Reducing dataset size from {old_len} to {len(dataset)}')
+
+    if probe_mode:
+        batch_size = len(dataset)
 
     # Create dataloader
     dataloader = torch.utils.data.DataLoader(dataset,
