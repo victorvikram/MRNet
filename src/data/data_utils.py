@@ -45,8 +45,10 @@ def get_data(data_root, dataname, image_size,
         dataset = torch.utils.data.Subset(dataset, indices[:int(max(old_len * ratio, 5 * batch_size))])
         warnings.warn(f'Reducing dataset size from {old_len} to {len(dataset)}')
 
-    if probe_mode:
+    if probe_mode and len(dataset) > 0:
         batch_size = len(dataset)
+    else:
+        batch_size = 32
 
     # Create dataloader
     dataloader = torch.utils.data.DataLoader(dataset,
