@@ -87,7 +87,12 @@ def main(args):
     if not args.test:
         trainer.main()
     else:
-        for subset in ['val', 'test']:
+        if args.probe_mode:
+            subsets = ['test']
+        else:
+            subsets = ['val', 'test']
+        
+        for subset in subsets:
             loss, acc, acc_regime = trainer.evaluate(subset)
             print(f'{subset} loss: {loss} - accuracy: {acc}')
             if acc_regime is not None:
