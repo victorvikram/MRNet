@@ -197,7 +197,7 @@ class RAVENDataset(Dataset):
             structure_encoded = None
 
         
-        if get_metadata:
+        if self.get_metadata:
             return resize_image, target, meta_target, structure_encoded, data_file
         else:
             return resize_image, target, data_file
