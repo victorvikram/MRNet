@@ -344,6 +344,8 @@ class Trainer:
                 image, target, meta_target, structure_encoded, data_file = batch_data
             else:
                 image, target, data_file = batch_data
+                meta_target = None
+                structure_encoded = None
             
             image = renormalize(image)
 
