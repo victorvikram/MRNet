@@ -55,10 +55,13 @@ class RAVENDataset(Dataset):
 
         self.file_names = []
         for i in subsets:
+            print(dataset_type)
+            print(os.path.join(self.data_dir, i, "*.npz"))
             file_names = [os.path.basename(f) for f in glob.glob(os.path.join(self.data_dir, i, "*.npz")) if dataset_type in os.path.basename(f)] # CHANGED - take into account test/train/val
             file_names = natsorted(file_names)
 
             self.file_names += [os.path.join(i, f) for f in file_names]
+            print(self.file_names)
 
         self.memory = None
         if in_memory:

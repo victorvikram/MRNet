@@ -32,7 +32,6 @@ def get_data(data_root, dataname, image_size,
 
     if 'RAVEN' in dataname:
         from .raven_dataset import RAVENDataset
-        print(get_data_path(data_root, dataname, special_dir=special_dir))
         dataset = RAVENDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                                dataset_type=dataset_type, subset=subset,
                                image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs)
