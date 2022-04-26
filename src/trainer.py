@@ -328,7 +328,10 @@ class Trainer:
         acc_avg = 0.0
         acc_multihead_avg = [0.0] * 3
 
-        acc_regime = init_acc_regime(self.args.dataset)
+        if not self.args.probe_mode:
+            acc_regime = init_acc_regime(self.args.dataset)
+        else:
+            acc_regime = None
 
         if subset == 'train':
             loader = self.trainloader
