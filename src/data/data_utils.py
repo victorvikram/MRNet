@@ -21,7 +21,7 @@ def get_data_path(data_root, dataname: str, special_dir=None):
 
 def get_data(data_root, dataname, image_size,
              dataset_type='train', regime=None, subset=None,
-             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False, special_dir=None, probe_mode=False):
+             batch_size=None, drop_last=True, num_workers=0, ratio=None, shuffle=True, flip=False, permute=False, special_dir=None, probe_mode=False, subdirs=True):
 
     # Load real dataset
     if 'PGM' in dataname:
@@ -35,7 +35,7 @@ def get_data(data_root, dataname, image_size,
         print(get_data_path(data_root, dataname, special_dir=special_dir))
         dataset = RAVENDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                                dataset_type=dataset_type, subset=subset,
-                               image_size=image_size, transform=None, flip=flip, permute=permute)
+                               image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs)
 
     # Reduce dataset to a smaller subset, nice for debugging
     if ratio is not None:

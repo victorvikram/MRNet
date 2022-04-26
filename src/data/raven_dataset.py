@@ -24,7 +24,7 @@ def to_tensor(sample):
 
 class RAVENDataset(Dataset):
     def __init__(self, root, cache_root, dataset_type=None, image_size=80, transform=None,
-                 use_cache=False, save_cache=False, in_memory=False, subset=None, flip=False, permute=False, additional_data_dir=False):
+                 use_cache=False, save_cache=False, in_memory=False, subset=None, flip=False, permute=False, additional_data_dir=False, subdirs=True):
         self.root = root
         self.cache_root = cache_root if cache_root is not None else root
         self.dataset_type = dataset_type
@@ -45,11 +45,13 @@ class RAVENDataset(Dataset):
         else:
             self.data_dir = self.cached_dir
 
-        if subset is not None:
+        if subset is not None and subdirs:
             subsets = [subset]
             assert os.path.isdir(os.path.join(self.data_dir, subset))
-        else:
+        elif subdirs:
             subsets = os.listdir(self.data_dir)
+        else:
+            subsets = [""] # use an empty string to indicate
 
         self.file_names = []
         for i in subsets:

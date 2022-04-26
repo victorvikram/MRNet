@@ -19,6 +19,7 @@ parser.add_argument('--batch_size', type=int, default=32)
 parser.add_argument('--num_workers', type=int, default=8)
 parser.add_argument('--img_size', type=int, default=80)
 parser.add_argument('--probe-mode', action='store_true')
+parser.add_argument('--no-subdirs', action='store_true')
 
 parser.add_argument('--seed', type=int, default=12345)
 parser.add_argument('--model_name', type=str, default='mrnet')
