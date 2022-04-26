@@ -25,7 +25,7 @@ def to_tensor(sample):
 class RAVENDataset(Dataset):
     def __init__(self, root, cache_root, dataset_type=None, image_size=80, transform=None,
                  use_cache=False, save_cache=False, in_memory=False, subset=None, flip=False, 
-                 permute=False, additional_data_dir=False, subdirs=True, get_meta_targets=True):
+                 permute=False, additional_data_dir=False, subdirs=True, get_metadata=True):
         self.root = root
         self.cache_root = cache_root if cache_root is not None else root
         self.dataset_type = dataset_type
@@ -35,7 +35,7 @@ class RAVENDataset(Dataset):
         self.save_cache = save_cache
         self.flip = flip
         self.permute = permute
-        self.get_meta_targets = get_meta_targets
+        self.get_metadata = get_metadata
 
         if self.use_cache:
             self.cached_dir = os.path.join(self.cache_root, 'cache', f'{self.dataset_type}_{self.image_size}')
@@ -165,10 +165,12 @@ class RAVENDataset(Dataset):
 
         # Get additional data
         target = data["target"]
-        if self.get_meta_targets:
+
+        if self.get_metadata:
             meta_target = data["meta_target"]
-        structure = data["structure"]
-        structure_encoded = data["meta_matrix"]
+            structure = data["structure"]   
+            structure_encoded = data["meta_matrix"]
+
         del data
 
         if self.transform:
@@ -186,12 +188,14 @@ class RAVENDataset(Dataset):
                 target = new_target
 
         target = torch.tensor(target, dtype=torch.long)
-        
-        if self.get_meta_targets:
+
+        if self.get_metadata:
             meta_target = torch.tensor(meta_target, dtype=torch.float32)
+            structure_encoded = torch.tensor(structure_encoded, dtype=torch.float32)
         else:
             meta_target = None
+            structure_encoded = None
 
-        structure_encoded = torch.tensor(structure_encoded, dtype=torch.float32)
+        
 
         return resize_image, target, meta_target, structure_encoded, data_file

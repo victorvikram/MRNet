@@ -34,7 +34,7 @@ def get_data(data_root, dataname, image_size,
         from .raven_dataset import RAVENDataset
         dataset = RAVENDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                                dataset_type=dataset_type, subset=subset,
-                               image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs, get_meta_targets=(not probe_mode))
+                               image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs, get_metadata=(not probe_mode))
 
     # Reduce dataset to a smaller subset, nice for debugging
     if ratio is not None:
