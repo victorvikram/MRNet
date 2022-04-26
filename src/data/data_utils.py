@@ -34,7 +34,7 @@ def get_data(data_root, dataname, image_size,
         from .raven_dataset import RAVENDataset
         dataset = RAVENDataset(get_data_path(data_root, dataname, special_dir=special_dir), None,
                                dataset_type=dataset_type, subset=subset,
-                               image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs)
+                               image_size=image_size, transform=None, flip=flip, permute=permute, subdirs=subdirs, get_meta_targets=(not probe_mode))
 
     # Reduce dataset to a smaller subset, nice for debugging
     if ratio is not None:
@@ -45,10 +45,8 @@ def get_data(data_root, dataname, image_size,
         dataset = torch.utils.data.Subset(dataset, indices[:int(max(old_len * ratio, 5 * batch_size))])
         warnings.warn(f'Reducing dataset size from {old_len} to {len(dataset)}')
 
-    if probe_mode and len(dataset) > 0:
+    if probe_mode:
         batch_size = len(dataset)
-    else:
-        batch_size = 32
 
     # Create dataloader
     dataloader = torch.utils.data.DataLoader(dataset,
