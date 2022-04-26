@@ -340,7 +340,11 @@ class Trainer:
         for batch_data in tqdm(loader, subset):
             counter += 1
 
-            image, target, meta_target, structure_encoded, data_file = batch_data
+            if self.args.probe_mode:
+                image, target, meta_target, structure_encoded, data_file = batch_data
+            else:
+                image, target, data_file = batch_data
+            
             image = renormalize(image)
 
             image = image.cuda()
