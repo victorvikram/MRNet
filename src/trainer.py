@@ -56,12 +56,11 @@ class Trainer:
 
         shuffle = not args.probe_mode
 
-        if not args.probe_mode:
-            self.trainloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
+        self.trainloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                         dataset_type="train", regime=self.args.regime, subset=self.args.subset,
                                         batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
                                         ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir, probe_mode=args.probe_mode, subdirs=(not args.no_subdirs))
-            self.validloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
+        self.validloader = get_data(self.args.path, self.args.dataset, self.args.img_size,
                                         dataset_type="val", regime=self.args.regime, subset=self.args.subset,
                                         batch_size=self.args.batch_size, drop_last=True, num_workers=self.args.num_workers,
                                         ratio=self.args.ratio, shuffle=shuffle, special_dir=args.special_dir, probe_mode=args.probe_mode, subdirs=(not args.no_subdirs))
