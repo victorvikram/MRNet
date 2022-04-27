@@ -1,0 +1,646 @@
+{
+  "target": 0,
+  "human": true,
+  "panels": [
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 4,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 1,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 7,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 7,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        },
+        {
+          "position": 4,
+          "size": 5,
+          "type": 7,
+          "color": 2,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 4,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 4,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 7,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 7,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 6,
+          "color": 4,
+          "angle": -3
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 3,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 4,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 7,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 9,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 4,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 8,
+          "size": 5,
+          "type": 4,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    },
+    {
+      "structure": "distribute_nine",
+      "first_comp": [
+        {
+          "position": 1,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 2,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 3,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 5,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        },
+        {
+          "position": 6,
+          "size": 5,
+          "type": 5,
+          "color": 4,
+          "angle": -2
+        }
+      ]
+    }
+  ]
+}

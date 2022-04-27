@@ -1,0 +1,594 @@
+{
+  "target": 5,
+  "human": true,
+  "panels": [
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 4,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 2,
+          "size": 5,
+          "type": 5
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 3,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 4,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 1,
+          "size": 5,
+          "type": 4
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 2,
+          "size": 5,
+          "type": 4
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 3,
+          "size": 5,
+          "type": 4
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 4,
+          "size": 5,
+          "type": 4
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 4,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 2,
+          "size": 5,
+          "type": 3
+        },
+        {
+          "angle": -2,
+          "color": 5,
+          "position": 3,
+          "size": 5,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 2,
+          "size": 3,
+          "type": 6
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 3,
+          "size": 3,
+          "type": 5
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 2,
+          "size": 3,
+          "type": 4
+        },
+        {
+          "angle": -2,
+          "color": 0,
+          "position": 4,
+          "size": 3,
+          "type": 4
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 1,
+          "size": 3,
+          "type": 5
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 2,
+          "size": 3,
+          "type": 5
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 3,
+          "size": 3,
+          "type": 5
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 1,
+          "size": 3,
+          "type": 4
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 2,
+          "size": 3,
+          "type": 4
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 3,
+          "size": 3,
+          "type": 4
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 4,
+          "size": 3,
+          "type": 4
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 1,
+          "position": 1,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 1,
+          "position": 2,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 1,
+          "position": 3,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 1,
+          "position": 4,
+          "size": 3,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 4,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 2,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 3,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 4,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 0,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 3,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 2,
+          "size": 4,
+          "type": 3
+        },
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 3,
+          "size": 0,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 1,
+          "position": 4,
+          "size": 5,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 4,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 4,
+          "position": 2,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 4,
+          "position": 3,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 4,
+          "position": 4,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 2,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 3,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 2,
+          "position": 4,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 1,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 2,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 3,
+          "size": 3,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 4,
+          "size": 3,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 4,
+          "type": 4
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 2,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 3,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 5,
+          "position": 4,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 0,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 3,
+          "color": 3,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 3,
+          "position": 2,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 3,
+          "position": 3,
+          "size": 1,
+          "type": 3
+        },
+        {
+          "angle": 3,
+          "color": 3,
+          "position": 4,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "structure": "out_in_grid"
+    }
+  ]
+}
