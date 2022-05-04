@@ -1,0 +1,342 @@
+{
+  "target": 5,
+  "human": true,
+  "panels": [
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 1,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 4,
+          "position": 1,
+          "size": 4,
+          "type": 5
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 2,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 4,
+          "position": 1,
+          "size": 4,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 4,
+          "color": 3,
+          "position": 1,
+          "size": 5,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": -2,
+          "color": 4,
+          "position": 1,
+          "size": 4,
+          "type": 3
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 7
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 1,
+          "color": 0,
+          "position": 1,
+          "size": 1,
+          "type": 6
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 0,
+          "color": 3,
+          "position": 1,
+          "size": 2,
+          "type": 7
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 1,
+          "color": 0,
+          "position": 1,
+          "size": 1,
+          "type": 5
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 0,
+          "color": 4,
+          "position": 1,
+          "size": 2,
+          "type": 7
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 1,
+          "color": 0,
+          "position": 1,
+          "size": 1,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 1,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 6
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 1,
+          "type": 3
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 4,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 3,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 5,
+          "type": 6
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 0,
+          "position": 1,
+          "size": 3,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 3,
+          "position": 1,
+          "size": 3,
+          "type": 6
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 0,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 3,
+          "position": 1,
+          "size": 2,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 2,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 3,
+          "position": 1,
+          "size": 3,
+          "type": 7
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 3,
+          "position": 1,
+          "size": 3,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    },
+    {
+      "first_comp": [
+        {
+          "angle": 2,
+          "color": 3,
+          "position": 1,
+          "size": 4,
+          "type": 5
+        }
+      ],
+      "second_comp": [
+        {
+          "angle": 0,
+          "color": 3,
+          "position": 1,
+          "size": 2,
+          "type": 4
+        }
+      ],
+      "structure": "out_in"
+    }
+  ]
+}
